@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#252425" />
+    <meta name="theme-color" content="#252425" />
+    <meta
+      httpEquiv="Content-Security-Policy"
+      content="script-src 'self' https://accounts.google.com/gsi/client; frame-src 'self' https://www.googleapis.com;"
+    />
+    <meta
+      httpEquiv="Secure-Cross-Origin-Opener-Policy"
+      content="same-origin-allow-popups"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
