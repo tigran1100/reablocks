@@ -7,21 +7,23 @@ import '@testing-library/jest-dom/vitest';
 
 // Components
 // import { Checkbox } from './Checkbox';
-import { Checkbox } from 'reablocks';
+import { Checkbox, ThemeProvider, theme } from 'reablocks';
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 
 const TestComponent = () => {
   const [checked, setChecked] = useState<boolean>(false);
   return (
-    <Checkbox
-      checked={checked}
-      label="Check me"
-      onChange={() => setChecked(!checked)}
-      intermediate={true}
-      disabled={false}
-      size="small"
-    />
+    <ThemeProvider theme={theme}>
+      <Checkbox
+        checked={checked}
+        label="Check me"
+        onChange={() => setChecked(!checked)}
+        intermediate={true}
+        disabled={false}
+        size="small"
+      />
+    </ThemeProvider>
   );
 };
 

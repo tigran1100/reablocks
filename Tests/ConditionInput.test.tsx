@@ -6,12 +6,16 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/vitest';
 
 // Components
-import { InlineInput } from 'reablocks';
+import { InlineInput, ThemeProvider, theme } from 'reablocks';
 import React from 'react';
 import { describe, it } from 'vitest';
 
 const TestComponent = () => {
-  return <InlineInput />;
+  return (
+    <ThemeProvider theme={theme}>
+      <InlineInput />
+    </ThemeProvider>
+  );
 };
 
 describe('Test', () => {

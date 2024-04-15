@@ -52,7 +52,7 @@
     "js-cookie": "^3.0.5",
     "nanoid": "^4.0.2",
     "rdk": "^6.5.0",
-    "reablocks": "^5.8.0",
+    "reablocks": "^7.2.0",
     "react": "^18.2.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
